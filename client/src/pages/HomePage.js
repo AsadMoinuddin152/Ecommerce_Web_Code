@@ -111,7 +111,7 @@ const HomePage = () => {
                 key={c._id}
                 onChange={(e) => handleFilter(e.target.checked, c._id)}
               >
-                {c.name}
+                {c.name.toUpperCase()}
               </Checkbox>
             ))}
           </div>

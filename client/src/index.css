@@ -204,3 +204,12 @@
   margin-left: auto;
   margin-right: 5%;
 }
+
+body {
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(225, 222, 223, 1) 0%,
+    rgba(181, 225, 252, 1) 100%
+  );
+}
