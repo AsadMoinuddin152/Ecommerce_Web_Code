@@ -1,5 +1,3 @@
-Certainly! Here's a template for a README file based on the instructions and prompts from our conversation:
-
 ```markdown
 # Ecommerce Web App
 
