@@ -1,0 +1,100 @@
+.home-page h1 {
+  color: gray;
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeIn 1s ease-out;
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page .card-price {
+  color: green;
+  font-weight: bold;
+}
+
+.home-page button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-page .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.home-page .card img:hover {
+  transform: scale(1.05);
+}
+
+.home-page .card-img-top {
+  height: 300px !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.filters h4 {
+  color: gray !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+
+.filters button {
+  background-color: black;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.filters button:hover {
+  background-color: #333;
+}
+
+.loadmore {
+  color: green;
+  font-weight: bold;
+  font-size: 20px !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.loadmore:hover {
+  color: darkgreen;
+}
+
+/* Responsive styles for smaller screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .home-page .card {
+    width: 100%; /* Full width for cards on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .home-page h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .home-page .card-img-top {
+    height: 200px !important; /* Adjust image height for smaller screens */
+  }
+}
